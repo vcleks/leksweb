@@ -1,0 +1,16 @@
+{
+  "name": "webstuff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.1.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+	"clean": "gulp clean"
+  }
+}
