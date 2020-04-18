@@ -8,7 +8,7 @@ function clean() {
 }
 
 function html() {
-    return src('pages/*.html')
+    return src('pages/**/*.html')
         .pipe(fileinclude({
             basepath: 'includes/',
         }))
@@ -21,7 +21,7 @@ function staticContent() {
 }
 
 exports.default = series(clean, function() {
-    watch(['pages/*.html', 'includes/'], { ignoreInitial: false }, html);
+    watch(['pages/**/*.html', 'includes/'], { ignoreInitial: false }, html);
     watch(['static/'], { ignoreInitial: false }, staticContent);
 });
 
